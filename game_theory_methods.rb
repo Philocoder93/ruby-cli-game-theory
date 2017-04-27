@@ -17,6 +17,12 @@ for x in 1..100 do
 end
 # this will generate a 2d array and fill it with various values
 
+(0..99).to_a.each do |x|
+  (0..99).to_a.each do |y|
+    twodee[x][y] = Random.rand(1...2)
+  end
+end
+# this little bit of code randomly distributes 1s and 2s over the generated 2d grid
 
 (0..99).to_a.each do |x|
   (0..99).to_a.each do |y|
@@ -24,5 +30,8 @@ end
   end
   puts ""
 end
+
+
+
 # this will iterate over the array generated above and print out a board that
 # corresponds with those values
