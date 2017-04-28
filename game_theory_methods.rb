@@ -31,6 +31,13 @@ end
   puts ""
 end
 
+# this method will generate a random path across the board
+
+def path array
+  length = array.length
+  out = (1...length).to_a.product((1...length).to_a)
+  out.shuffle
+end
 
 
 # this will iterate over the array generated above and print out a board that
